@@ -5,7 +5,7 @@
       <input v-model="emo" placeholder="输入你的心情" class="input-field">
       <button @click="generateImage" :disabled="isGenerating" class="generatebutton">生成图片</button>
       <p v-if="isGenerating" class="loadingtext">正在生成图片，请稍候...</p>
-        <img :src="imageUrl" alt="Generated Image" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" @click="editImage" class="generatedimage" width="70%" height="70%">
+        <img v-if ="imageUrl" :src="imageUrl" alt="Generated Image" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" @click="editImage" class="generatedimage" width="70%" height="70%">
         <div class="tooltip" v-if="isHovered">点击进入创作</div>
     </div>
     <br>

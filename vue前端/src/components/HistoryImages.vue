@@ -127,7 +127,7 @@ const deleteImage = async (imageId) => {
 .list {
   position: absolute;
   width: 20%;
-  height: auto;
+  /* height: auto; */
 }
 
 .imageNamesList {

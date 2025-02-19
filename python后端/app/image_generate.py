@@ -15,7 +15,7 @@ def generate_image(prompt):
     # 构建请求负载
     payload = {
         "prompt": prompt,
-        "steps": 15,
+        "steps": 10,
         "width": 256,
         "height":256
     }
